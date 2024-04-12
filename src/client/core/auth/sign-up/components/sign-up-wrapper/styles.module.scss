@@ -1,0 +1,15 @@
+.login {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+.title {
+  margin-bottom: 24px;
+}
+.text {
+  margin-bottom: 24px;
+}

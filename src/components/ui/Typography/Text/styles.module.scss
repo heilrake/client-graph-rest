@@ -1,0 +1,211 @@
+$font-base: 'Basis Grotesque Pro', 'Arial', sans-serif;
+$font-second: 'Montserrat', 'Arial', sans-serif;
+$font-family: -apple-system, BlinkMacSystemFont, $font-base, $font-second, Roboto, 'Helvetica Neue',
+  Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  'Noto Color Emoji';
+$white-100: #ffffff;
+$gray-200: #f3f4f4;
+$gray-300: #e5eaed;
+$gray-400: #d0d3d6;
+$gray-500: #b8bdc0;
+$gray-600: #8e979c;
+$gray-700: #59666e;
+$gray-900: #132530;
+$gray-950: #041824;
+$gray-1000: #020709;
+$gray-1100: #131c20;
+$blue-700: #829bab;
+$blue-750: #48d3ff;
+$blue-800: #316fea;
+$main-gray-3: #e7e9ea;
+$orange-800: #f57e2e;
+$orange-900: #f85a00;
+.text {
+  height: auto;
+  margin: 0;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  overflow-wrap: break-word;
+}
+.text-box-full {
+  display: block;
+  width: 100%;
+}
+.text-box-inline {
+  display: inline;
+}
+.text-alignment-vertical {
+  &-top,
+  &-middle,
+  &-bottom {
+    display: inline-block;
+  }
+  &-top {
+    vertical-align: top;
+  }
+  &-middle {
+    vertical-align: middle;
+  }
+  &-bottom {
+    vertical-align: bottom;
+  }
+  &-baseline {
+    vertical-align: baseline;
+  }
+}
+.text-alignment-horizontal {
+  &-left {
+    text-align: left;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+}
+.text-size {
+  &-12 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  &-14 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  &-16 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &-20 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  &-24 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &-28 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  &-32 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  &-36 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  &-44 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+}
+.text-font {
+  &-system {
+    font-family: $font-family;
+  }
+  &-base {
+    font-family: $font-base;
+  }
+  &-second {
+    font-family: $font-second;
+  }
+}
+.text-font-weight {
+  &-100 {
+    font-weight: 100;
+  }
+  &-200 {
+    font-weight: 200;
+  }
+  &-300 {
+    font-weight: 300;
+  }
+  &-400 {
+    font-weight: 400;
+  }
+  &-500 {
+    font-weight: 500;
+  }
+  &-600 {
+    font-weight: 600;
+  }
+  &-700 {
+    font-weight: 700;
+  }
+  &-800 {
+    font-weight: 800;
+  }
+  &-900 {
+    font-weight: 900;
+  }
+}
+.text-font-style {
+  &-italic {
+    font-style: italic;
+  }
+}
+.text-color-white {
+  &-100 {
+    color: $white-100;
+  }
+}
+.text-color-gray {
+  &-200 {
+    color: $gray-200;
+  }
+  &-300 {
+    color: $gray-300;
+  }
+  &-400 {
+    color: $gray-400;
+  }
+  &-500 {
+    color: $gray-500;
+  }
+  &-600 {
+    color: $gray-600;
+  }
+  &-700 {
+    color: $gray-700;
+  }
+  &-900 {
+    color: $gray-900;
+  }
+  &-950 {
+    color: $gray-950;
+  }
+  &-1000 {
+    color: $gray-1000;
+  }
+  &-1100 {
+    color: $gray-1100;
+  }
+}
+.text-color-blue {
+  &-700 {
+    color: $blue-700;
+  }
+  &-750 {
+    color: $blue-750;
+  }
+  &-800 {
+    color: $blue-800;
+  }
+}
+.text-color-main-gray {
+  &-3 {
+    color: $main-gray-3;
+  }
+}
+.text-color-orange {
+  &-800 {
+    color: $orange-800;
+  }
+  &-900 {
+    color: $orange-900;
+  }
+}

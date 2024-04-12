@@ -1,0 +1,23 @@
+$font-base: 'Basis Grotesque Pro', 'Arial', sans-serif;
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.button {
+  height: 48px;
+  width: -webkit-fill-available;
+}
+
+.link {
+  font-family: $font-base;
+  font-weight: 500;
+  color: #316fea;
+  text-decoration: none;
+  word-break: break-all;
+  touch-action: manipulation;
+  cursor: pointer;
+  outline: 0;
+  transition: color 0.3s;
+}
