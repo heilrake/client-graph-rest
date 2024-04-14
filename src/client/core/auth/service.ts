@@ -1,6 +1,6 @@
 import { AxiosResponse } from 'axios';
 import { AuthResponse } from './models';
-import http from '../../../api/network-provider';
+import http from '../../../configs/network-provider';
 
 export const authService = Object.freeze({
   registration: (email: string, password: string): Promise<AxiosResponse<AuthResponse>> => {

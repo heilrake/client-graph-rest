@@ -1,8 +1,8 @@
-import { useQuery } from "@apollo/client";
-import { GET_ALL_POSTS } from "../../apollo/posts.ts";
+import { useGetAllPostsQuery } from "../../../generated/graphql.ts";
 
 export const ProfilePage = () => {
-  const { data } = useQuery(GET_ALL_POSTS);
-  console.log(data);
+  const { data } = useGetAllPostsQuery();
+  console.log(data?.getAllPosts);
+
   return <div>ProfilePage</div>;
 };
