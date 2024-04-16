@@ -1,16 +1,17 @@
-import React, { useEffect } from 'react';
-import { useCheckAuth } from '../client/core/auth/hooks/useCheckAuth';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { useCheckAuth } from "../client/core/auth/hooks/useCheckAuth";
+import { useNavigate } from "react-router-dom";
 
 export const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const { onCheckAuth } = useCheckAuth();
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (localStorage.getItem('token')) {
-      onCheckAuth();
+    if (localStorage.getItem("token")) {
+      // onCheckAuth();
+      console.log("here");
     } else {
-      navigate('/sign-in');
+      navigate("/sign-in");
     }
   }, []);
 

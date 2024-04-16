@@ -25,6 +25,7 @@ export const useLogin = (): UseLogin => {
         setLoading(false);
         navigate('/profile');
       } catch (e) {
+        setLoading(false);
         console.log(e);
       }
     })();
