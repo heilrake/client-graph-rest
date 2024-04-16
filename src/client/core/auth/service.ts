@@ -1,5 +1,5 @@
 import { AxiosResponse } from "axios";
-import { AuthResponse } from "./models";
+import type { AuthResponse } from "./models";
 import http from "../../../configs/network-provider";
 
 export const authService = Object.freeze({
