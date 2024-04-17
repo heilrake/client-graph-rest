@@ -9,7 +9,6 @@ export const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     if (localStorage.getItem("token")) {
       // onCheckAuth();
-      console.log("here");
     } else {
       navigate("/sign-in");
     }

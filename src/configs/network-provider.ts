@@ -31,14 +31,15 @@ http.interceptors.response.use(
     ) {
       try {
         const res = await axios.get<AuthResponse>(
-          `${process.env.API_URL_REST}/refresh`,
+          "http://localhost:5001/api/auth/refresh",
           {
             withCredentials: true,
           },
         );
+
         localStorage.setItem("token", res.data.accessToken);
 
-        return http.request(response);
+        return http.request(error.config);
       } catch (error) {
         console.log("User is not authorize");
       }
